@@ -1,0 +1,5 @@
+id,prefabName,hp
+0,enemy_small,100
+1,enemy_normal,200
+2,enemy_normal2,300
+3,boss,1000
