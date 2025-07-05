@@ -2,26 +2,35 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading;
 
 public class ChatManager : MonoBehaviour
 {
     [Header("UI 연결")]
-    public GameObject chatOverlay;                      // 전체 채팅 패널
-    public Button toggleOverlayButton;                  // 말풍선 열기 버튼
-    public Button closeButton;                          // 닫기 버튼
+    public GameObject chatOverlay;
+    public Button toggleOverlayButton;
+    public Button closeButton;
 
-    public TMP_InputField inputField;                   // 입력창
-    public Button sendButton;                           // "입력" 버튼
-    public TextMeshProUGUI previewText;                 // 상단 최근 메시지 미리보기
+    public TMP_InputField inputField;
+    public Button sendButton;
+    public TextMeshProUGUI previewText;
 
     [Header("채팅 로그")]
-    public Transform chatContent;                       // ScrollView > Content
-    public GameObject chatTextPrefab;                   // 생성할 채팅 Text 프리팹
+    public Transform chatContent;
+    public GameObject chatTextPrefab;
 
     private List<string> chatHistory = new List<string>();
 
+    // TCP 연결 관련 변수
+    private TcpClient client;
+    private NetworkStream stream;
+    private Thread receiveThread;
+
     void Start()
     {
+
         if (sendButton != null)
             sendButton.onClick.AddListener(SendMessage);
 
@@ -30,6 +39,61 @@ public class ChatManager : MonoBehaviour
 
         if (closeButton != null)
             closeButton.onClick.AddListener(() => chatOverlay.SetActive(false));
+
+        ConnectToServer(); // 서버 연결
+    }
+
+    void OnDestroy()
+    {
+        stream?.Close();
+        client?.Close();
+        receiveThread?.Abort();
+    }
+
+    void ConnectToServer()
+    {
+        try
+        {
+            client = new TcpClient("127.0.0.1", 7777); // 서버 IP, 포트
+            stream = client.GetStream();
+            receiveThread = new Thread(ReceiveLoop);
+            receiveThread.IsBackground = true;
+            receiveThread.Start();
+        }
+        catch
+        {
+            Debug.LogWarning("서버에 연결할 수 없습니다.");
+        }
+    }
+
+    void ReceiveLoop()
+    {
+        byte[] buffer = new byte[1024];
+        while (client.Connected)
+        {
+            int bytesRead = 0;
+
+            try
+            {
+                bytesRead = stream.Read(buffer, 0, buffer.Length);
+            }
+            catch
+            {
+                break;
+            }
+
+            if (bytesRead > 0)
+            {
+                string msg = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                string[] split = msg.Split(new[] { ':' }, 2);
+                if (split.Length == 2)
+                {
+                    string sender = split[0].Trim();
+                    string message = split[1].Trim();
+                    UnityMainThreadDispatcher.Instance().Enqueue(() => OnReceiveFromServer(sender, message));
+                }
+            }
+        }
     }
 
     public void SendMessage()
@@ -40,8 +104,12 @@ public class ChatManager : MonoBehaviour
         AddChatLine("나", msg);
         inputField.text = "";
 
-        // TODO: 나중에 서버로 메시지 전송
-        // SendToServer(msg);
+        if (stream != null && stream.CanWrite)
+        {
+            string full = "나:" + msg;
+            byte[] data = Encoding.UTF8.GetBytes(full);
+            stream.Write(data, 0, data.Length);
+        }
     }
 
     public void AddChatLine(string sender, string message)
@@ -58,7 +126,6 @@ public class ChatManager : MonoBehaviour
             previewText.text = full;
     }
 
-    // 나중에 서버에서 메시지를 받았을 때 호출
     public void OnReceiveFromServer(string sender, string message)
     {
         AddChatLine(sender, message);

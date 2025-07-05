@@ -33,7 +33,8 @@ public class Enemy : MonoBehaviour
         hp -= damage;
         if (hp <= 0)
         {
-            GameHUD hud = FindObjectOfType<GameHUD>();
+            GameHUD hud = FindAnyObjectByType<GameHUD>();
+
             if (hud != null)
                 hud.AddKillScore();
 
