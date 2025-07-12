@@ -33,7 +33,7 @@ public class ChatManager : MonoBehaviour
 
     void Start()
     {
-        UnityMainThreadDispatcher.Instance(); 
+        UnityMainThreadDispatcher.Instance();
 
         ConnectToChatServer();
 
@@ -58,7 +58,7 @@ public class ChatManager : MonoBehaviour
     {
         try
         {
-            client = new TcpClient("127.0.0.1", 7777); // 채팅 서버 포트
+            client = new TcpClient("127.0.0.1", 7777);
             stream = client.GetStream();
             receiveThread = new Thread(ReceiveLoop);
             receiveThread.IsBackground = true;
