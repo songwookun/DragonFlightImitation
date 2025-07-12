@@ -401,8 +401,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uBCF4\uC0C1 \uB0B4\uC6A9"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: bd17cea765c7749468be0ef3a1485e8c, type: 2}
-  m_sharedMaterial: {fileID: -7446595474276693371, guid: bd17cea765c7749468be0ef3a1485e8c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c52639ccf3753e84189a132c9c08bd33, type: 2}
+  m_sharedMaterial: {fileID: -5728331270031311286, guid: c52639ccf3753e84189a132c9c08bd33, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

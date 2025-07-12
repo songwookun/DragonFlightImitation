@@ -1,4 +1,3 @@
-
 using TMPro;
 using UnityEngine;
 
@@ -6,6 +5,10 @@ public class GameHUD : MonoBehaviour
 {
     public TextMeshProUGUI killScoreText;
     public TextMeshProUGUI timeScoreText;
+    public int KillScore => killScore;
+    public int TimeScore => timeScore;
+
+
 
     private int killScore = 0;
     private int timeScore = 0;
@@ -45,5 +48,18 @@ public class GameHUD : MonoBehaviour
     {
         if (timeScoreText != null)
             timeScoreText.text = timeScore.ToString("N0");
+    }
+
+    public int GetTotalScore()
+    {
+        return killScore + timeScore;
+    }
+
+    void SendFinalScoreToServer()
+    {
+        string playerName = "Player1";
+        int totalScore = killScore + timeScore;
+
+        TcpRankingClient.SendScore(playerName, totalScore);
     }
 }
