@@ -8,7 +8,7 @@ public static class TcpRankingClient
     {
         try
         {
-            TcpClient client = new TcpClient("127.0.0.1", 5000); 
+            TcpClient client = new TcpClient("127.0.0.1", 5000);
             string message = $"submit:{name},{score}";
             byte[] data = Encoding.UTF8.GetBytes(message);
             client.GetStream().Write(data, 0, data.Length);

@@ -4568,7 +4568,6 @@ MonoBehaviour:
   previewText: {fileID: 1213633748}
   chatContent: {fileID: 1985460144}
   chatTextPrefab: {fileID: 5666027219999333341, guid: 11cce8993449e95408dffcd18f7197e5, type: 3}
-  currentNickname: "\uB098"
 --- !u!4 &1663170002
 Transform:
   m_ObjectHideFlags: 0
@@ -5618,7 +5617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2060857512
 MonoBehaviour:
   m_ObjectHideFlags: 0

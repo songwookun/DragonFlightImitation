@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C# \uACF5\uBD80\\Server\uAC15\uC758\\UnityMailServer\\MailServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A695EC6-0AC0-48EA-84A7-51DD1D7C410D}|MailServer\\MailServer.csproj|d:\\c# \uACF5\uBD80\\server\uAC15\uC758\\unitymailserver\\mailserver\\mailserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A695EC6-0AC0-48EA-84A7-51DD1D7C410D}|MailServer\\MailServer.csproj|solutionrelative:mailserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A695EC6-0AC0-48EA-84A7-51DD1D7C410D}|MailServer\\MailServer.csproj|D:\\C# \uACF5\uBD80\\Server\uAC15\uC758\\UnityMailServer\\MailServer\\mailserver\\mail_data.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2A695EC6-0AC0-48EA-84A7-51DD1D7C410D}|MailServer\\MailServer.csproj|solutionrelative:mailserver\\mail_data.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Gold\\OneDrive\\\uBC14\uD0D5\uD654~1-DESKTOP-6LEB37H-8587\\mail_data.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "mail_data.csv",
+              "DocumentMoniker": "C:\\Users\\Gold\\OneDrive\\\uBC14\uD0D5\uD654~1-DESKTOP-6LEB37H-8587\\mail_data.csv",
+              "ToolTip": "C:\\Users\\Gold\\OneDrive\\\uBC14\uD0D5\uD654~1-DESKTOP-6LEB37H-8587\\mail_data.csv",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-07-11T14:26:49.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C# \uACF5\uBD80\\Server\uAC15\uC758\\UnityMailServer\\MailServer\\MailServer\\Program.cs",
+              "RelativeDocumentMoniker": "MailServer\\Program.cs",
+              "ToolTip": "D:\\C# \uACF5\uBD80\\Server\uAC15\uC758\\UnityMailServer\\MailServer\\MailServer\\Program.cs",
+              "RelativeToolTip": "MailServer\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T14:10:49.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "mail_data.csv",
+              "DocumentMoniker": "D:\\C# \uACF5\uBD80\\Server\uAC15\uC758\\UnityMailServer\\MailServer\\MailServer\\mail_data.csv",
+              "RelativeDocumentMoniker": "MailServer\\mail_data.csv",
+              "ToolTip": "D:\\C# \uACF5\uBD80\\Server\uAC15\uC758\\UnityMailServer\\MailServer\\MailServer\\mail_data.csv",
+              "RelativeToolTip": "MailServer\\mail_data.csv",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-07-11T15:10:28.247Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+D:\C# 공부\Server강의\UnityMailServer\MailServer\MailServer\bin\Debug\net8.0\MailServer.exe
+D:\C# 공부\Server강의\UnityMailServer\MailServer\MailServer\bin\Debug\net8.0\MailServer.deps.json
+D:\C# 공부\Server강의\UnityMailServer\MailServer\MailServer\bin\Debug\net8.0\MailServer.runtimeconfig.json
+D:\C# 공부\Server강의\UnityMailServer\MailServer\MailServer\bin\Debug\net8.0\MailServer.dll
+D:\C# 공부\Server강의\UnityMailServer\MailServer\MailServer\bin\Debug\net8.0\MailServer.pdb
+D:\C# 공부\Server강의\UnityMailServer\MailServer\MailServer\obj\Debug\net8.0\MailServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# 공부\Server강의\UnityMailServer\MailServer\MailServer\obj\Debug\net8.0\MailServer.AssemblyInfoInputs.cache
+D:\C# 공부\Server강의\UnityMailServer\MailServer\MailServer\obj\Debug\net8.0\MailServer.AssemblyInfo.cs
+D:\C# 공부\Server강의\UnityMailServer\MailServer\MailServer\obj\Debug\net8.0\MailServer.csproj.CoreCompileInputs.cache
+D:\C# 공부\Server강의\UnityMailServer\MailServer\MailServer\obj\Debug\net8.0\MailServer.dll
+D:\C# 공부\Server강의\UnityMailServer\MailServer\MailServer\obj\Debug\net8.0\refint\MailServer.dll
+D:\C# 공부\Server강의\UnityMailServer\MailServer\MailServer\obj\Debug\net8.0\MailServer.pdb
+D:\C# 공부\Server강의\UnityMailServer\MailServer\MailServer\obj\Debug\net8.0\MailServer.genruntimeconfig.cache
+D:\C# 공부\Server강의\UnityMailServer\MailServer\MailServer\obj\Debug\net8.0\ref\MailServer.dll
+D:\C# 공부\Server강의\UnityMailServer\MailServer\MailServer\bin\Debug\net8.0\mail_data.csv

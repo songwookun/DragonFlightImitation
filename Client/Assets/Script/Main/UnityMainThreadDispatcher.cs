@@ -29,6 +29,9 @@ public class UnityMainThreadDispatcher : MonoBehaviour
 
     void Update()
     {
+        if (_executionQueue.Count > 0)
+            Debug.Log("[Dispatcher] Update 실행됨. 큐 처리 중...");
+
         while (_executionQueue.Count > 0)
         {
             _executionQueue.Dequeue()?.Invoke();

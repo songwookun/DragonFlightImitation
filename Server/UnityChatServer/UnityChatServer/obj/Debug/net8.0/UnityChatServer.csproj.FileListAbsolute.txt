@@ -1,0 +1,14 @@
+D:\C# 공부\Server강의\UnityChatServer\UnityChatServer\bin\Debug\net8.0\UnityChatServer.exe
+D:\C# 공부\Server강의\UnityChatServer\UnityChatServer\bin\Debug\net8.0\UnityChatServer.deps.json
+D:\C# 공부\Server강의\UnityChatServer\UnityChatServer\bin\Debug\net8.0\UnityChatServer.runtimeconfig.json
+D:\C# 공부\Server강의\UnityChatServer\UnityChatServer\bin\Debug\net8.0\UnityChatServer.dll
+D:\C# 공부\Server강의\UnityChatServer\UnityChatServer\bin\Debug\net8.0\UnityChatServer.pdb
+D:\C# 공부\Server강의\UnityChatServer\UnityChatServer\obj\Debug\net8.0\UnityChatServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# 공부\Server강의\UnityChatServer\UnityChatServer\obj\Debug\net8.0\UnityChatServer.AssemblyInfoInputs.cache
+D:\C# 공부\Server강의\UnityChatServer\UnityChatServer\obj\Debug\net8.0\UnityChatServer.AssemblyInfo.cs
+D:\C# 공부\Server강의\UnityChatServer\UnityChatServer\obj\Debug\net8.0\UnityChatServer.csproj.CoreCompileInputs.cache
+D:\C# 공부\Server강의\UnityChatServer\UnityChatServer\obj\Debug\net8.0\UnityChatServer.dll
+D:\C# 공부\Server강의\UnityChatServer\UnityChatServer\obj\Debug\net8.0\refint\UnityChatServer.dll
+D:\C# 공부\Server강의\UnityChatServer\UnityChatServer\obj\Debug\net8.0\UnityChatServer.pdb
+D:\C# 공부\Server강의\UnityChatServer\UnityChatServer\obj\Debug\net8.0\UnityChatServer.genruntimeconfig.cache
+D:\C# 공부\Server강의\UnityChatServer\UnityChatServer\obj\Debug\net8.0\ref\UnityChatServer.dll
